@@ -1,0 +1,38 @@
+.container {
+    /* display: flex;
+    margin: auto; */
+    /* justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.col {
+    /* width: 40%; */
+    height: 250px;
+    background: #fdfdfd;
+}
+
+@media(orientation: portrait) {
+    body {
+        background: rgb(240, 201, 240);
+    }
+    h1 {
+        color: rgb(247, 144, 126);
+    }
+    .container {
+        /* flex-wrap: wrap; */
+        grid-template-columns: 1fr;
+    }
+    /* .col {
+        width: 90%;
+        margin-top: 10px;
+    } */
+}
+@media(orientation: landscape) {
+    body {
+        background: #eec3c3;
+    }
+    h1 {
+        color: #f7f7f7;
+    }
+}
